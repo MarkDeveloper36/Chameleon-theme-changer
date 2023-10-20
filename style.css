@@ -1,0 +1,72 @@
+:root {
+    --sideSpace: 3rem;
+}
+
+:root.lightTheme {
+    --text-color:#000000;
+    --background-color:#efefef;
+    --chameleon-eye: #333E48;
+    --charmeleon-spot-color: #28B07F;
+}
+
+:root.darkTheme {
+    --text-color:#efefef;
+    --background-color:#000000;
+    --chameleon-eye: #b08f28;
+    --charmeleon-spot-color: #b02899;
+}
+
+body {
+    overflow: hidden;
+    font-size: calc(1em + 0.5vw);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: 0.5s ease;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#containerHeader {
+    width: 900px;
+    height: 160px;
+    align-self: center;
+}
+
+h1 {
+    margin: 10px auto;
+}
+
+p {
+    margin: 5px auto;
+}
+
+#svgContainer {
+    height: 450px;
+    width: 900px;
+    background-color: #285ab0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    align-self: center;
+    border: 8px #456bac solid;
+}
+
+#svgChameleon {
+    transform: scale(2.5);
+}
+
+#chameleonEye {
+    fill: var(--chameleon-eye);
+    transition: 3s ease;
+}
+
+.chameleonSpotColor {
+    fill: var(--charmeleon-spot-color);
+}
+
+
+/* https://colors.muz.li/palette/28B07F/1c7b6a/b02899/7b1c6b/b08f28 */
