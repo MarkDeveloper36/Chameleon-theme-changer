@@ -36,7 +36,7 @@ main {
 }
 
 #containerHeader {
-    width: calc(700px + 1vh);
+    width: calc(900px + 1vh);
     height: calc(120px + 1vw);
     align-self: center;
 }
@@ -51,7 +51,7 @@ p {
 
 #svgContainer {
     height: 450px;
-    width: 900px;
+    width: calc(900px + 1vh);
     background-color: #285ab0;
     display: flex;
     justify-content: center;
@@ -59,6 +59,7 @@ p {
     border-radius: 50px;
     align-self: center;
     border: 8px #456bac solid;
+    margin-top: 15px;
 }
 
 #svgChameleon {
@@ -89,6 +90,23 @@ p {
     fill: var(--chameleon-Body-Color);
     transition: 2.5s ease;
 }
+
+#toggleButton {
+    color: var(--text-color);
+    padding: calc(9px + 0.05vw) calc(19px + 0.05vw);
+    background-color: #285ab0;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#toggleButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
 
 
 /* https://colors.muz.li/palette/28B07F/1c7b6a/b02899/7b1c6b/b08f28 */
