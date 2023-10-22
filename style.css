@@ -27,7 +27,7 @@ body {
     font-size: calc(1em + 0.5vw);
     color: var(--text-color);
     background-color: var(--background-color);
-    transition: 1s ease;
+    transition: background-color 1s ease;
 }
 
 main {
@@ -39,6 +39,7 @@ main {
     width: calc(900px + 1vh);
     height: calc(120px + 1vw);
     align-self: center;
+    display: flex;
 }
 
 h1 {
@@ -47,6 +48,16 @@ h1 {
 
 p {
     margin: 5px auto;
+}
+
+#headerAnimationDiv {
+    height: calc(100px + 1vh);
+    width: calc(100px + 1vh);
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: calc(50% - (calc(100px + 1vh) / 2));
+    margin-top: 16px;
 }
 
 #svgContainer {
@@ -60,6 +71,7 @@ p {
     align-self: center;
     border: 8px #456bac solid;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #svgChameleon {
@@ -88,7 +100,7 @@ p {
 
 .chameleonBodyColor {
     fill: var(--chameleon-Body-Color);
-    transition: 2.5s ease;
+    transition: 3s ease;
 }
 
 #toggleButton {
