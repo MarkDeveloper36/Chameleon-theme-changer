@@ -7,13 +7,19 @@
     --background-color:#efefef;
     --chameleon-eye: #333E48;
     --charmeleon-spot-color: #28B07F;
+    --chameleon-BackLeg-Color: #007348;
+    --chameleon-FrontLeg-Color: #00945E;
+    --chameleon-Body-Color: #05CE7C; 
 }
 
 :root.darkTheme {
     --text-color:#efefef;
     --background-color:#000000;
-    --chameleon-eye: #b08f28;
-    --charmeleon-spot-color: #b02899;
+    --chameleon-eye: #f49cff;
+    --charmeleon-spot-color: #f49cff;
+    --chameleon-BackLeg-Color: #7b1c6b;
+    --chameleon-FrontLeg-Color: #90047d;
+    --chameleon-Body-Color: #b02899;
 }
 
 body {
@@ -21,7 +27,7 @@ body {
     font-size: calc(1em + 0.5vw);
     color: var(--text-color);
     background-color: var(--background-color);
-    transition: 0.5s ease;
+    transition: 1s ease;
 }
 
 main {
@@ -30,8 +36,8 @@ main {
 }
 
 #containerHeader {
-    width: 900px;
-    height: 160px;
+    width: calc(700px + 1vh);
+    height: calc(120px + 1vw);
     align-self: center;
 }
 
@@ -61,11 +67,27 @@ p {
 
 #chameleonEye {
     fill: var(--chameleon-eye);
-    transition: 3s ease;
+    transition: 1s ease;
 }
 
 .chameleonSpotColor {
     fill: var(--charmeleon-spot-color);
+    transition: 1.5s ease;
+}
+
+.chameleonFrontLegColor {
+    fill: var(--chameleon-FrontLeg-Color);
+    transition: 1.75s ease-out;
+}
+
+.chameleonBackLegColor {
+    fill: var(--chameleon-BackLeg-Color);
+    transition: 1.5s ease-out;
+}
+
+.chameleonBodyColor {
+    fill: var(--chameleon-Body-Color);
+    transition: 2.5s ease;
 }
 
 
