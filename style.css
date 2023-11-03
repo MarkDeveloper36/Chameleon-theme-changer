@@ -27,7 +27,7 @@ body {
     font-size: calc(1em + 0.5vw);
     color: var(--text-color);
     background-color: var(--background-color);
-    transition: background-color 1s ease;
+    transition: background-color 0.5s ease;
 }
 
 main {
@@ -54,10 +54,35 @@ p {
     height: calc(100px + 1vh);
     width: calc(100px + 1vh);
     background-color: gray;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     position: absolute;
     margin-left: calc(50% - (calc(100px + 1vh) / 2));
     margin-top: 16px;
+    display: flex;
+}
+
+#SVG-Sun {
+    width: 100px;
+}
+
+#SVG-Moon {
+    width: 100px;
+}
+
+.moonColor {
+    fill: red;
+}
+
+.SVG-Sun-ThemeDark {
+    translate: -60px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.SVG-Moon-ThemeDark {
+    translate: -60px;
+    opacity: 1;
+    transition: all 1s ease;
 }
 
 #svgContainer {
@@ -104,7 +129,7 @@ p {
 }
 
 #toggleButton {
-    color: var(--text-color);
+    color: white;
     padding: calc(9px + 0.05vw) calc(19px + 0.05vw);
     background-color: #285ab0;
     border-radius: 5px;
