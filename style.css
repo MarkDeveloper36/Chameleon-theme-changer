@@ -10,7 +10,6 @@
     --chameleon-BackLeg-Color: #007348;
     --chameleon-FrontLeg-Color: #00945E;
     --chameleon-Body-Color: #05CE7C;
-    --border-color: #231F20;
 }
 
 :root.darkTheme {
@@ -21,7 +20,6 @@
     --chameleon-BackLeg-Color: #7b1c6b;
     --chameleon-FrontLeg-Color: #90047d;
     --chameleon-Body-Color: #b02899;
-    --border-color: #efefef;
 }
 
 body {
@@ -55,8 +53,8 @@ p {
 #headerAnimationDiv {
     height: calc(100px + 1vh);
     width: calc(100px + 1vh);
-    background-color: #808080;
-    border: 2px solid var(--border-color);
+    background-color: #285ab0;
+    border: 2px solid #456bac;
     border-radius: 50%;
     position: absolute;
     margin-left: calc(50% - (calc(100px + 1vh) / 2));
@@ -97,7 +95,7 @@ p {
 #svgContainer {
     height: 450px;
     width: calc(900px + 1vh);
-    background-color: rgb(40, 90, 176);
+    background-color: #285ab0;
     display: flex;
     justify-content: center;
     align-items: center;
