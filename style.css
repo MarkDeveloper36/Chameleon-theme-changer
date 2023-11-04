@@ -6,20 +6,22 @@
     --text-color:#000000;
     --background-color:#efefef;
     --chameleon-eye: #333E48;
-    --charmeleon-spot-color: #28B07F;
+    --chameleon-spot-color: #28B07F;
     --chameleon-BackLeg-Color: #007348;
     --chameleon-FrontLeg-Color: #00945E;
-    --chameleon-Body-Color: #05CE7C; 
+    --chameleon-Body-Color: #05CE7C;
+    --border-color: #231F20;
 }
 
 :root.darkTheme {
     --text-color:#efefef;
     --background-color:#000000;
     --chameleon-eye: #f49cff;
-    --charmeleon-spot-color: #f49cff;
+    --chameleon-spot-color: #f49cff;
     --chameleon-BackLeg-Color: #7b1c6b;
     --chameleon-FrontLeg-Color: #90047d;
     --chameleon-Body-Color: #b02899;
+    --border-color: #efefef;
 }
 
 body {
@@ -53,48 +55,49 @@ p {
 #headerAnimationDiv {
     height: calc(100px + 1vh);
     width: calc(100px + 1vh);
-    background-color: gray;
+    background-color: #808080;
+    border: 2px solid var(--border-color);
     border-radius: 50%;
     position: absolute;
     margin-left: calc(50% - (calc(100px + 1vh) / 2));
     margin-top: 16px;
     display: flex;
-    padding: 10px;
-}
-
-#SVG-Sun {
-    width: 100px;
+    padding: 1px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .sunLight {
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 
 .sunDark {
-    translate: -70px;
-    transition: all 1s linear;
+    translate: -225px;
+    transition: all 0.5s linear;
 }
 
-#SVG-Moon {
-    width: 100px;
+#sunAndMoon {
+    transform: translateY(-224px);
+}
+
+#Vector_1 {
+    fill: #231F20;
 }
 
 .moonLight {
     fill: #231F20;
-    translate: 60px;
-    transition: all 1s linear;
+    translate: 240px;
+    transition: all 0.5s linear;
 }
 
 .moonDark {
     fill: #231F20;
-    transition: all 1s linear;
-    translate: -3px;
+    transition: all 0.5s linear;
 }
 
 #svgContainer {
     height: 450px;
     width: calc(900px + 1vh);
-    background-color: #285ab0;
+    background-color: rgb(40, 90, 176);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,6 +106,7 @@ p {
     border: 8px #456bac solid;
     margin-top: 15px;
     margin-bottom: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 #svgChameleon {
@@ -115,7 +119,7 @@ p {
 }
 
 .chameleonSpotColor {
-    fill: var(--charmeleon-spot-color);
+    fill: var(--chameleon-spot-color);
     transition: 1.5s ease;
 }
 

@@ -2,7 +2,6 @@ const displayThemeSpan = document.querySelector('#displayThemeSpan');
 const body = document.querySelector('body');
 const root = document.documentElement;
 
-const SVGsun = document.querySelector('#SVG-Sun');
 const SVGmoon = document.querySelector('#SVG-Moon');
 const SVGstar = document.querySelector('#SVG-Star');
 
