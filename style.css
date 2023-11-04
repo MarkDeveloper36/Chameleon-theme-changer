@@ -54,35 +54,41 @@ p {
     height: calc(100px + 1vh);
     width: calc(100px + 1vh);
     background-color: gray;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     position: absolute;
     margin-left: calc(50% - (calc(100px + 1vh) / 2));
     margin-top: 16px;
     display: flex;
+    padding: 10px;
 }
 
 #SVG-Sun {
     width: 100px;
 }
 
+.sunLight {
+    transition: all 1s linear;
+}
+
+.sunDark {
+    translate: -70px;
+    transition: all 1s linear;
+}
+
 #SVG-Moon {
     width: 100px;
 }
 
-.moonColor {
-    fill: red;
+.moonLight {
+    fill: #231F20;
+    translate: 60px;
+    transition: all 1s linear;
 }
 
-.SVG-Sun-ThemeDark {
-    translate: -60px;
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.SVG-Moon-ThemeDark {
-    translate: -60px;
-    opacity: 1;
-    transition: all 1s ease;
+.moonDark {
+    fill: #231F20;
+    transition: all 1s linear;
+    translate: -3px;
 }
 
 #svgContainer {
